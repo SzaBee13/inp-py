@@ -46,6 +46,6 @@ class inp:
 o = inp("Enter a num", int, "\n")
 print(o)
 
-# inp("asd" <- requerd) = input("asd")
+# inp("asd" <- required) = input("asd")
 # inp("asd", int) or inp("asd", "int") -> int(input("asd"))
 # inp("asd", str, "\n") -> input("asd" + "\n")
