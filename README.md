@@ -1,4 +1,5 @@
 # INP Python
+Python input improved version.
 
 ## What is this?
 - Python input() function whit a lot of feature.
@@ -17,3 +18,11 @@
   - List -> list
   - Dictionaries -> dict
   - Tuple -> tuple
+
+## What it return?
+- The input the user type in the type (arg) type (e. g. str, int)
+- If you want to use it later, save it in a variable!
+
+## How to import it?
+1. Place the class in you code start, when you import everything to your code.
+2. Use it like i say before! Have fun!

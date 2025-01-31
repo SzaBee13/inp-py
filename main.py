@@ -1,8 +1,6 @@
 class inp:
     def Type(self):
-        if self.type == "str" or self.type == str:
-            return "str"
-        elif self.type == "int" or self.type == int:
+        if self.type == "int" or self.type == int:
             return "int"
         elif self.type == "float" or self.type == float:
             return "float"
@@ -16,11 +14,14 @@ class inp:
             return "tuple"
         else: return "str"
 
+    def Generate(self):
+        return input(f'{self.text} (Type: {self.Type()}){self.end}')
+
     def __init__(self, text, type=str, end=": "):
         self.text = text
         self.type = type
         self.end = end
-        self.value = input(f"{self.text} (Type: {self.Type()}){self.end}")
+        self.value = self.Generate()
     
     def __str__(self):
         return str(self.value)
@@ -43,8 +44,8 @@ class inp:
     def __tuple__(self):
         return tuple(self.value)
 
-o = inp("Enter a num", int, "\n")
-print(o)
+i = inp("Enter a num", int, ":\n")
+print(f"input: {i}")
 
 # inp("asd" <- required) = input("asd")
 # inp("asd", int) or inp("asd", "int") -> int(input("asd"))
