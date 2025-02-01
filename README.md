@@ -26,9 +26,6 @@ Python input improved version.
 - The input the user type in the type (arg) type (e. g. str, int)
 - If you want to use it later, save it in a variable!
 
-### How to import it?
-1. Place the class in you code start, when you import everything to your code.
-2. Use it like i say before! Have fun!
 
 ## Python List Plus
 
@@ -38,3 +35,7 @@ Python input improved version.
   - self
   - list
   - case "l" "low" "lower" or "u", "up" "upper"
+
+## How to import it?
+1. Place the class in you code start, when you import everything to your code.
+2. Use it like i say before! Have fun!
