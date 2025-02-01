@@ -31,3 +31,10 @@ Python input improved version.
 2. Use it like i say before! Have fun!
 
 ## Python List Plus
+
+### Remove Duplicates
+- Remove duplicated element from the list.
+- Args:
+  - self
+  - list
+  - case "l" "low" "lower" or "u", "up" "upper"

@@ -64,10 +64,13 @@ class listPlus:
     
     def removeDuplicated(self, l: list, case: str =""):
         self.value = list(dict.fromkeys(l).keys())
-        if case == "l" or "low" or "lower":
+        if case:
             for i in range(0, len(self.value)):
                 if str(type(self.value[i])) == "<class 'str'>":
-                    self.value[i] = self.value[i].lower()
+                    if case == "l" or "low" or "lower":
+                        self.value[i] = self.value[i].lower()
+                    elif case == "u" or "up" or "upper":
+                        self.value[i] = self.value[i].upper()
                 else: pass
         return self.value
     
