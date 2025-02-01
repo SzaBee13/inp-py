@@ -1,3 +1,7 @@
+#################
+# INP
+#################
+
 class inp:
     def Type(self):
         if self.type == "int" or self.type == int:
@@ -17,7 +21,7 @@ class inp:
     def Generate(self):
         return input(f'{self.text} (Type: {self.Type()}){self.end}')
 
-    def __init__(self, text, type=str, end=": "):
+    def __init__(self, text, type: str = "", end: str =": "):
         self.text = text
         self.type = type
         self.end = end
@@ -50,3 +54,27 @@ print(f"input: {i}")
 # inp("asd" <- required) = input("asd")
 # inp("asd", int) or inp("asd", "int") -> int(input("asd"))
 # inp("asd", str, "\n") -> input("asd" + "\n")
+
+#################
+# LISTS
+#################
+
+class listPlus:
+    def __init__(self): pass
+    
+    def removeDuplicated(self, l: list, case: str =""):
+        self.value = list(dict.fromkeys(l).keys())
+        if case == "l" or "low" or "lower":
+            for i in range(0, len(self.value)):
+                if str(type(self.value[i])) == "<class 'str'>":
+                    self.value[i] = self.value[i].lower()
+                else: pass
+        return self.value
+    
+    def __list__(self):
+        if self.value:
+            return list(self.value)
+        else:
+            return "Not defined"
+
+print(listPlus().removeDuplicated(["a", "a", "a", "b"]))
